@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h1>Welcome!</h1> -->
+    <div class="container">
+    <button id="toto1" onclick="Toto.driveMyCar()">Drive My Car</button>
+    <button id="toto2" onclick="Boy.carwash()">Car Wash</button>
+</div>
+
+<script>
+    function Driver(name, age, experience) {
+    this.name = name;
+    this.age = age;
+    this.experience = experience;
+
+this.carwash = function() {
+alert(`${this.name} will be the car wash
+${this.age} years old
+${this.experience} of experience`)
+    }
+
+this.driveMyCar = function() {
+alert(`${this.name} will be the driver
+${this.age} years old
+${this.experience} of experience`)
+
+
+    }}
+
+    const Toto = new Driver(
+    'Toto', 23, '2 years');
+
+    const Boy = new Driver(
+    'Boy', 23, '2 years'
+    )
+
+</script>
+</body>
+</html>
